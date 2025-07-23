@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amai Cakes - Pastelería</title>
+
+    <!-- Google Fonts: Una fuente elegante para la pastelería -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Swiper.js CSS para los carruseles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Enlace a tu hoja de estilos CSS -->
+    <link rel="stylesheet" href="C:\Users\OT\Desktop\luis\HTML\amai.repo\amai.stylesheets.css">
+
+    <!-- Favicon (icono de la pestaña) -->
+    <link rel="icon" href="C:\Users\OT\Desktop\luis\HTML\amai.repo\amai.svg\amaigalleta.svg" type="image/svg">
+</head>
+<body>
+
+    <!-- ======================= -->
+    <!--         HEADER          -->
+    <!-- ======================= -->
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="header-logo">
+                <!-- Coloca aquí tu logo. He usado el que subiste. -->
+                <img src="C:\Users\OT\Desktop\luis\HTML\amai.repo\amai.svg\logo sin fondo.svg" alt="Logo de Amai Cakes">
+            </a>
+           <div class="search-container">
+               <input type="text" id="search-bar" placeholder="carrot cake...">
+               <i class="fa-solid fa-magnifying-glass"></i>
+               <button id="search-button">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+               </button>
+           </div>
+
+            <nav class="main-nav">
+                <a href="#populares">Populares</a>
+                <a href="#nuevos">Novedades</a>
+                <a href="#contacto">Contacto</a>
+                <a href="file:///C:/Users/OT/Desktop/luis/HTML/amai.repo/calculadora.html" target="_blank">Calculadora</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ======================= -->
+    <!--      CONTENIDO PPAL     -->
+    <!-- ======================= -->
+    <main>
+        <!-- Sección de Bienvenida -->
+        <section class="hero-section">
+            <div class="container">
+                <h1>El dulce arte de la pastelería</h1>
+                <p>Hecho con amor, horneado a la perfección.</p>
+            </div>
+        </section>
+
+        <!-- Sección Carrusel 1: Populares -->
+        <section id="populares" class="carousel-section">
+            <div class="container">
+                <h2 class="section-title">Nuestros Pasteles más Populares</h2>
+                <!-- Slider main container -->
+                <div class="swiper popular-cakes-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="cake-card">
+                                <img src="https://placehold.co/600x400/FBC4C4/8B0000?text=Pastel+de+Fresa" alt="Pastel de Fresa">
+                                <h3>Carrot Cake</h3>
+                                <p class="price"></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cake-card">
+                                <img src="https://placehold.co/600x400/FBC4C4/8B0000?text=Torta+de+Chocolate" alt="Torta de Chocolate">
+                                <h3>Torta de Chocolate Intenso</h3>
+                                <p class="price"></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cake-card">
+                                <img src="https://placehold.co/600x400/FBC4C4/8B0000?text=Cheesecake" alt="Cheesecake de Frutos Rojos">
+                                <h3>Cheesecake de Frutos Rojos</h3>
+                                <p class="price"></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cake-card">
+                                <img src="https://placehold.co/600x400/FBC4C4/8B0000?text=Pastel+Red+Velvet" alt="Pastel Red Velvet">
+                                <h3>Pastel Red Velvet Clásico</h3>
+                                <p class="price"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Carrusel 2: Novedades -->
+        <section id="nuevos" class="carousel-section bg-light">
+            <div class="container">
+                <h2 class="section-title">Nuevas Creaciones</h2>
+                <div class="swiper new-cakes-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cake-card">
+                                <img src="https://placehold.co/600x400/F68B8B/FFFFFF?text=Pastel+Matcha" alt="pastel de caca"">
+                                <h3>pastel de caca</h3>
+                                <p class="price"></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cake-card">
+                                <img src="https://placehold.co/600x400/F68B8B/FFFFFF?text=Tarta+de+Limón" alt="pie de limon">
+                                <h3>pie de limon</h3>
+                                <p class="price">24.00 €</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cake-card">
+                                <img src="https://placehold.co/600x400/F68B8B/FFFFFF?text=Pastel+Zanahoria" alt="pastel de cafe">
+                                <h3>pastel de cafe</h3>
+                                <p class="price">$9999</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================= -->
+    <!--         FOOTER          -->
+    <!-- ======================= -->
+    <footer id="contacto" class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Amai Cakes</h4>
+                    <p>Horneando momentos de felicidad desde 2024. Cada pastel es una obra de arte hecha con los ingredientes más frescos.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#populares">Pasteles</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <p>
+                        Calle Falsa 123, Ciudad<br>
+                        Email: <a href="mailto:hola@amaicakes.com">hola@amaicakes.com</a><br>
+                        <a href="<a href="https://web.whatsapp.com/" target="_blank">whatsapp</a>
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/amai.cakes_/" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/share/1E1iegn4kL/" target="_blank">Facebook</a>
+                        <a href="https://www.tiktok.com/@amai.cakes?_t=ZM-8xvQ73gwxWf&_r=1" target="_blank">Tiktok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Amai Cakes. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper.js para los carruseles -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Enlace a tu archivo JavaScript -->
+    <script src="C:\Users\OT\Desktop\luis\HTML\amai.repo\amai.scrip"></script>
+</body>
+</html>

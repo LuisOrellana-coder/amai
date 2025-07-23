@@ -1,0 +1,79 @@
+// Se ejecuta cuando el DOM está completamente cargado
+document.addEventListener('DOMContentLoaded', function () {
+
+    // Inicialización del carrusel de "Pasteles Populares"
+    const popularSlider = new Swiper('.popular-cakes-slider', {
+        // Opciones de Swiper
+        direction: 'horizontal',
+        loop: true, // Para que el carrusel sea infinito
+        slidesPerView: 1, // Vistas por defecto (móvil)
+        spaceBetween: 20,
+
+        // Paginación (los puntitos de abajo)
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        // Botones de navegación (flechas)
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // Breakpoints para diseño responsivo
+        breakpoints: {
+            // Cuando la ventana es >= 768px
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            // Cuando la ventana es >= 1024px
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 40
+            }
+        }
+    });
+
+    // Inicialización del carrusel de "Nuevas Creaciones"
+    const newSlider = new Swiper('.new-cakes-slider', {
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 40
+            }
+        }
+    });
+
+    // Funcionalidad simple para el botón de búsqueda
+    const searchButton = document.getElementById('search-button');
+    const searchBar = document.getElementById('search-bar');
+
+    if (searchButton && searchBar) {
+        searchButton.addEventListener('click', function() {
+            const query = searchBar.value;
+            if (query) {
+                alert('Buscando: ' + query);
+                // Aquí iría la lógica para buscar productos
+            }
+        });
+    }
+
+});
